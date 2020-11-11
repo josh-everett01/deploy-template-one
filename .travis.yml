@@ -4,7 +4,7 @@ node_js:
 
 cache: npm
 
-script: deploy
+script: install
 deploy:
   provider: pages
   local_dir: dist
