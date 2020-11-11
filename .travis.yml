@@ -6,10 +6,11 @@ cache: npm
 
 script: eslint --ext .js,.vue src
 deploy:
-  provider: pages
-  local_dir: dist
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN 
-  keep_history: true
-  on:
-    branch: master
+  script: run deploy
+  # provider: pages
+  # local_dir: dist
+  # skip_cleanup: true
+  # github_token: $GITHUB_TOKEN 
+  # keep_history: true
+  # on:
+  #   branch: master
