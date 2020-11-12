@@ -8,9 +8,11 @@ script:
   - npm install
 deploy:
   provider: pages
+  local_dir: dist
   skip_cleanup: true
   github_token: $token 
   keep_history: true
   on:
     branch: master
-    
+after_success:
+  - npm run deploy
