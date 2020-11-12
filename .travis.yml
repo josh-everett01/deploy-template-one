@@ -8,7 +8,7 @@ script:
   - npm install
 deploy:
   provider: script
-  script: npm deploy
+  script: deploy
   github_token: $token 
   on:
     branch: master
