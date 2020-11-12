@@ -8,7 +8,7 @@ script:
   - npm install
   - npm deploy
 deploy:
- "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
+ script: - npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
   # provider: pages
   # local_dir: dist
   # skip_cleanup: true
