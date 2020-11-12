@@ -7,8 +7,10 @@ cache: npm
 script: 
   - npm install
 deploy:
-  provider: script
-  script: npm install; npm run build; push-dir --dir=dist --branch=gh-pages --cleanup
+  provider: pages
+  skip_cleanup: true
   github_token: $token 
+  keep_history: true
   on:
     branch: master
+    
