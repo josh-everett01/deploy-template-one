@@ -11,4 +11,4 @@ deploy:
   script: npm deploy
   github_token: $token 
   on:
-    branch: gh-pages
+    branch: master
