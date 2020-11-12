@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/stealie.png" />
+    <img src="./assets/jerry.jpg" />
     <router-view />
   </div>
 </template>
@@ -22,5 +22,7 @@ export default {
 }
 img {
   width: 25%;
+  border-radius: 25px;
+  border: 1px solid #000;
 }
 </style>
