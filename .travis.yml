@@ -6,8 +6,8 @@ cache: npm
 
 script: 
   - npm install
-  - npm deploy
 deploy:
+  script: - npm run deploy
   provider: pages
   local_dir: dist
   skip_cleanup: true
