@@ -8,7 +8,7 @@ script:
   - npm install
 deploy:
   provider: script
-  script: npm run build; push-dir --dir=dist --branch=gh-pages --cleanup
+  script: npm install; npm run build; push-dir --dir=dist --branch=gh-pages --cleanup
   github_token: $token 
   on:
     branch: master
