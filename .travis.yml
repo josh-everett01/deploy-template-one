@@ -6,6 +6,7 @@ cache: npm
 
 script: 
   - npm install
+  - eslint --ext .js,.vue src
 deploy:
   provider: pages
   local_dir: dist
