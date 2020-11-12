@@ -8,11 +8,10 @@ script:
   - npm install
   - npm deploy
 deploy:
- script: - npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
-  # provider: pages
-  # local_dir: dist
-  # skip_cleanup: true
+  provider: pages
+  local_dir: dist
+  skip_cleanup: true
   github_token: $token 
-  # keep_history: true
-  # on:
-  #   branch: master
+  keep_history: true
+  on:
+    branch: master
